@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>forgot password 1</title>
+    <link rel="stylesheet" href="graduation.css">
+</head>
+<body>
+
+
+    <header>
+        <img src="dash.images/logo1.png" alt="Logo">
+        <nav>
+            <a href="home.html">Home</a>
+            <a href="about.html">About Us</a>
+           
+        </nav>
+    </header>
+    <body>
+
+        <div class="password-retrieval-container">
+            <h1>Password Retrieval</h1>
+            <p>Please enter your university ID</p>
+    
+            <form action="FPass2.html" method="get"  onsubmit="return validateForm()">
+                <label for="universityId">University ID:</label>
+                <input type="number" id="universityId" name="universityId" pattern="\d{10}" title="Please enter your university Id" required>
+    
+                <button type="submit">Submit</button>
+            </form>
+            <p id="error-message" style="color: red;"></p>
+            <p>Check your university ID card for the correct ID format.</p>
+        </div>
+        <script>
+            function validateForm() {
+                var universityId = document.getElementById('universityId').value;
+                var errorMessage = document.getElementById('error-message');
+    
+                if (universityId.length !== 10 || isNaN(universityId)) {
+                    errorMessage.textContent = 'Please enter a valid 10-digit university ID.';
+                    return false; 
+                }
+    
+                
+                errorMessage.textContent = '';
+                return true; 
+            }
+        </script>
+    
+    </body>
+    </html>

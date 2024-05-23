@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lab Reservation 2</title>
+    <link rel="stylesheet" href="graduation.css">
+    <style>
+        body { 
+    background: none;
+    background-color:#C8AE81;
+    overflow-y: auto;
+}
+
+
+.options-container {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            margin: 20px;
+        }
+
+        .option-card {
+            width: 200px;
+            background-color: #fff;
+            border: 1px solid #ddd;
+            border-radius: 8px;
+            margin: 10px;
+            padding: 15px;
+            text-align: center;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+
+        .select-button {
+            display: inline-block;
+            padding: 10px;
+            margin-top: 10px;
+            background-color:maroon;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+        }
+
+        .select-button:hover {
+            background-color: rgba(113, 5, 5, 0.815);
+        }
+
+    
+    </style>
+</head>
+<body >
+    <header>
+        <img src="dash.images/logo1.png" alt="Logo">
+        <nav>
+            <a href="announcements.php">Announcements</a>
+            <!--<a href="reservations.html">Reservations</a> -->
+            <a href="members.php">Members</a>
+           <a href="facilities.php">Facilities</a>
+           <a href="logout.html" >Log Out</a>
+        </nav>
+    </header>
+
+   
+
+<div class="dashboard-container">
+    
+
+        <div class="options-container">
+            <div class="option-card">
+                <h3>Manage<br> Members</h3>
+                <p>Manage and modify member information with their reservations</p>
+                <button class="select-button" onclick="location.href='members.php'">Select</button>
+            </div>
+
+            <div class="option-card">
+                <h3>Manage <br> Facilities</h3>
+                <p>Handle facilities and their details. Modify their information</p>
+                <button class="select-button" onclick="location.href='facilities.php'">Select</button>
+            </div>
+
+
+            <div class="option-card">
+                <h3>Manage Announcements</h3>
+                <p>View and create announcements for users. Delete and Edit access</p>
+                <button class="select-button" onclick="location.href='announcements.php'">Select</button>
+            </div>
+        </div>
+    </div>
+    
+</body>
+
+</html>

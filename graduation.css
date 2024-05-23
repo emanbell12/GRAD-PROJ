@@ -1,0 +1,523 @@
+html, body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Arial', sans-serif;
+    height: 100%;
+}
+
+body {
+    background: url('dash.images/bk1.jpg') center/cover no-repeat;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+header {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background-color:white;
+    padding: 15px;
+    box-sizing: border-box;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    box-shadow: 0px 2px 10px rgba(0, 0, 0, 0.1); 
+}
+
+header img {
+    width: 200px;
+    height: auto;
+}
+
+nav {
+    display: flex;
+    padding: 15px;
+}
+
+nav a {
+    color: #574d33; 
+    text-decoration: none;
+    margin: 15px;
+}
+
+
+
+.login-container {
+    background: #fff; 
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.2); 
+    max-width: 400px;
+    width: 100%;
+}
+
+input {
+    width: 100%;
+    padding: 12px;
+    margin-bottom: 15px;
+    box-sizing: border-box;
+    border: 1px solid #e5e5e5; 
+    border-radius: 5px;
+}
+
+button {
+    width: 100%;
+    padding: 12px;
+    background-color: maroon; 
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor:grab;
+}
+
+button:hover {
+    background-color: maroon; 
+}
+
+.forgot-password {
+    display: block;
+    text-align: center;
+    margin-top: 10px;
+    text-decoration-thickness: unset;
+    color: #0b0b0b; 
+}
+
+.forgot-password:hover {
+    color: #463f2b; 
+}
+
+
+
+.loginH-container {
+    text-align: center;
+    padding: 40px;
+    max-width: 1200px;
+    width: 100%;
+    background-color: #fff;
+    display: flex; 
+    justify-content: space-between; 
+    flex-wrap: wrap; 
+        
+        
+
+}
+
+.loginH-container h1 {
+    color: #000000;
+    font-size: 20px;
+}
+
+.loginH-container p {
+    color: #0b0b0b;
+}
+
+.role-option1 {
+    background-color: #ffffff;
+    border-radius: 8px;
+    border: 2px ;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.313);
+    padding: 10px;
+    margin-top: 20px; 
+    justify-content: space-around;
+    cursor: pointer;
+    max-width: 350px;
+    width: 100%;
+    
+}
+.role-option2 {
+    background-color: #ffffff;
+    border-radius: 8px;
+    border: 2px ;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.313);
+    padding: 10px;
+    margin-top: 20px; 
+    justify-content: space-around;
+    cursor: pointer;
+    max-width: 350px;
+    width: 100%;
+}
+.role-option3 {
+    background-color: #ffffff;
+    border-radius: 8px;
+    border: 2px ;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.313);
+    padding: 10px;
+    margin-top: 20px; 
+    justify-content: space-around;
+    cursor: pointer;
+    max-width: 350px;
+    width: 100%;
+}
+
+
+
+.loginH-container button{
+    background-color: maroon;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+
+
+
+.role-option:hover {
+    background-color: rgba(128, 0, 0, 0.806);
+}
+
+
+.password-retrieval-container {
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
+    padding: 40px;
+    text-align: center;
+    max-width: 400px;
+    width: 100%;
+}
+
+.password-retrieval-container h1 {
+    color: #333;
+    font-size: medium;
+}
+
+.password-retrieval-container p {
+    color: #555;
+}
+
+form {
+    margin-top: 20px;
+}
+
+label {
+    display: block;
+    margin-bottom: 10px;
+}
+
+input {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    box-sizing: border-box;
+}
+
+button {
+    width: 100%;
+    padding: 10px;
+    background-color: maroon;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: maroon;
+}
+
+a {
+    color: maroon;
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+
+
+.about-us-container {
+    display: flex;
+    background-color: #340101c5;
+    color: #fff;
+    width: 60%;
+    height: 60%;
+    padding: 20px;
+}
+
+.about-us-content {
+    max-width: 600px;
+    width: 100%;
+    padding: 20px;
+}
+
+h2 {
+    font-size: 20px;
+    margin-bottom: 10px;
+}
+
+.separator {
+    border: 1px solid #fff;
+    width: 60%;
+    margin: auto ;
+}
+
+.about-us-container p {
+    font-size: 22px;
+    text-align: justify;
+}
+
+.social-icons {
+    padding: 20px;
+    text-align: left;
+}
+
+.icon-link {
+    margin-left: 10px;
+    display: inline-block;
+}
+
+.icon-link img {
+    width: 30px;
+    height: 30px;
+}
+
+.lab-container {
+    text-align: center;
+    padding: 40px;
+    
+    
+    background-color: #fff;
+    display: flex; 
+    justify-content: space-between; 
+    flex-wrap: wrap; 
+}
+
+.lab-container h1{
+    color: #0b0b0b;
+    
+}
+
+.lab1{
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.313);
+    padding: 10px;
+    width: 350px;
+    margin-top: 20px; 
+    margin-right: 40px;
+    margin-left: 40px;
+    justify-content: space-between;
+    cursor: pointer;
+}
+.lab2{
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.313);
+    padding: 10px;
+    margin-top: 20px; 
+    justify-content: space-between;
+    cursor: pointer;
+}
+
+
+
+
+button {
+    background-color:maroon;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color:rgba(128, 0, 0, 0.904);
+}
+
+
+.reservation-container {
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    text-align: center;
+    max-width: 500px;
+    width: 100%;
+}
+
+h1 {
+    color: #333;
+}
+
+.reservation-container .separator {
+    border: 1px solid #000000;
+    width: 100%;
+    margin: 15px auto;
+}
+
+label {
+    display: block;
+    margin-top: 10px;
+}
+
+select,
+input {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    box-sizing: border-box;
+}
+
+.button-container {
+    display: flex;
+    justify-content: space-between;
+}
+
+.reservation-container button {
+    width: 48%; 
+    padding: 10px;
+    background-color: maroon;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color:rgba(128, 0, 0, 0.801);
+}
+
+
+.card-container{
+    display:flex;
+    justify-content: space-between;
+    text-align: center;
+    gap: 20px;
+    
+}
+.card{
+    width:250px;
+    height: 400px;
+background-color: rgb(242, 226, 204);
+border-radius: 10px;
+box-shadow:0px 2px 4px rgba(0, 0, 0, 0.313);
+overflow: hidden;
+
+
+}
+.card img{
+    width: 100%;
+    height: auto;
+    object-fit:cover;
+
+}
+  
+.card-content{
+    padding:2px;
+}
+
+
+
+.card-content p{
+    font-size: 15px;
+    color:rgb(0, 0, 0);
+    margin-bottom: 20px;
+
+}
+.card-button{
+    display: inline-block;
+    background-color: rgba(128, 0, 0, 0.852);
+    color: white;
+    border-radius: 5px;
+    padding:8px 16px;
+    cursor: pointer;
+}
+
+
+.reservations-container {
+    text-align: center;
+    padding: 20px;
+    max-width: 800px;
+    margin: 20px auto;
+    padding: 20px;
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1);
+}
+.reservation-container .separator {
+    border: 1px solid #ddd;
+    margin: 15px 0;
+}
+
+.reservation-item {
+    display: inline-block;
+    margin: 10px;
+    padding: 15px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    text-align: left;
+    border: 1px solid #ddd;
+    margin-bottom: 10px;
+}
+
+.reservation-item p {
+    margin: 5px 0;
+}
+
+.reservation-item button {
+    margin-top: 10px;
+    cursor: pointer;
+}
+
+@media screen and (max-width: 600px) {
+    .reservations-container {
+        padding: 10px;
+    }
+}
+
+.admin-container {
+    max-width: 800px;
+    margin: 20px auto;
+    padding: 20px;
+    background-color: #f5f5f5;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+h1, h2 {
+    color: #333;
+}
+
+#add-delete-form {
+    margin-top: 20px;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+}
+
+label {
+    margin-bottom: 5px;
+    font-weight: bold;
+}
+
+input, select {
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+button {
+    padding: 10px;
+    background-color: maroon;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: rgba(128, 0, 0, 0.801);
+}
+
+#members-list p {
+    margin-bottom: 10px;
+}

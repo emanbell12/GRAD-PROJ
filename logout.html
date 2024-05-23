@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Logout Confirmation</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            height: 100vh;
+            background-color: rgba(255, 255, 255, 0.427); /* Lighter background */
+        }
+
+        .confirmation-popup {
+            text-align: center;
+            padding: 20px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            background-color: #fff;
+            box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2); /* Box shadow */
+        }
+
+        .confirmation-popup button {
+            margin: 0 10px;
+            padding: 8px 16px;
+            cursor: pointer;
+            color: maroon;
+            background-color: #fff; /* Button background color */
+            border: 1px solid maroon;
+            border-radius: 3px;
+            transition: background-color 0.3s ease-in-out;
+        }
+
+        .confirmation-popup button:hover {
+            background-color: #f5ebeb; /* Slightly lighter color on hover */
+        }
+    </style>
+</head>
+<body>
+
+    <div class="confirmation-popup">
+        <p>Are you sure you want to log out?</p>
+        <button onclick="confirmLogout()">Confirm</button>
+        <button onclick="cancelLogout()">Cancel</button>
+    </div>
+
+    <script>
+        function confirmLogout() {
+            // Perform logout actions
+           localStorage.removeItem('userid');
+            window.location.href = 'home.html';
+        }
+
+        function cancelLogout() {
+            // Close the pop-up
+            window.close();
+        }
+    </script>
+
+</body>
+</html>
+

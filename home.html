@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home Page</title>
+    <link rel="stylesheet" href="graduation.css">
+    
+</head>
+<body>
+
+
+    <header>
+        <img src="dash.images/logo1.png" alt="Logo">
+        <nav>
+            <a href="about.html">About Us</a>
+        </nav>
+    </header> 
+
+    <div class="loginH-container">
+
+        <div class="role-option1">
+            <h2>Student</h2>
+                <p><b>Login as a student</b></p>
+            <button class="role-option" onclick="redirectToLogin('student')">Select</button>
+        </div>
+        <div class="role-option2">
+            <h2>Faculty</h2>
+                <p><b>Login as a faculty member</b></p>
+            <button class="role-option" onclick="redirectToLogin('faculty')"> Select </button>
+        </div>
+        <div class="role-option3">
+            <h2>Admin</h2>
+            <p><b>Login as an admin</b></p>
+            <button class="role-option" onclick="redirectToLogin('admin')">Select</button>
+        </div>
+    </div>
+    
+    
+    <script>
+        function redirectToLogin(role) {
+            switch (role) {
+                case 'student':
+                    window.location.href = 'StLogin.php';
+                    break;
+                case 'faculty':
+                    window.location.href = 'FaLogin.php';
+                    break;
+                case 'admin':
+                    window.location.href = 'AdLogin.php';
+                    break;
+                default:
+                    console.error('Invalid role selected');
+            }
+        }
+    </script>
+    
+</body>
+</html>

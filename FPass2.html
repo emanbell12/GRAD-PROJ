@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Forgot password 2</title>
+    <link rel="stylesheet" href="graduation.css">
+</head>
+<body>
+
+
+    <header>
+        <img src="dash.images/logo1.png" alt="Logo">
+        <nav>
+            <a href="home.html">Home</a>
+            <a href="about.html">About Us</a>
+           
+        </nav>
+    </header>
+    <body>
+        <div class="password-retrieval-container">
+            <h1>Verfication</h1>
+            <p>We've sent a code to your email. Please enter the code below:</p>
+
+        
+     
+            <form action="#" method="post">
+                <label for="verificationCode">Verification Code:</label>
+                <input type="text" id="verificationCode" name="verificationCode" required>
+    
+                <button type="submit" onclick="submitForm()">Submit</button>
+
+            </form>
+        </div>
+
+        <script>
+       
+       
+    document.querySelector('.password-retrieval-container form').addEventListener('submit', function (event) {
+        event.preventDefault(); // Prevent the default form submission
+
+        const universityId = document.getElementById('universityId').value;
+        const userType = getUserType(universityId);
+
+        switch (userType) {
+            case 'student':
+                window.location.href = 'ststudent.html';
+                break;
+            case 'faculty':
+                window.location.href = 'faservices.html';
+                break;
+            case 'admin':
+                window.location.href = 'AdminPage.html';
+                break;
+            default:
+                // Handle default case or provide an error message
+                alert('Invalid user type');
+                break;
+        }
+    });
+
+    function getUserType(universityId) {
+        // Replace this placeholder logic with your actual implementation
+        // For testing purposes, assuming student for now
+        if (universityId.startsWith('1')) {
+            return 'student';
+        } else if (universityId.startsWith('2')) {
+            return 'faculty';
+        } else if (universityId.startsWith('3')) {
+            return 'admin';
+        } else {
+            return 'unknown';
+        }
+    }
+</script>
+
+        
+    
+    </body>
+    </html>
